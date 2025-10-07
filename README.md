@@ -1,7 +1,7 @@
 
 ![enter image description here](https://i.imgur.com/nU2XbDJ.png)
 #  www.system-d.org 
-[![Build Status](https://travis-ci.com/HUB-HUmanBeing/SystemD.svg?branch=develop)](https://travis-ci.com/HUB-HUmanBeing/SystemD)
+[![Build Status](https://travis-ci.com/ioqt00/SystemD.svg?branch=develop)](https://travis-ci.com/ioqt00/SystemD)
 
 
 ## Plate forme web chiffrée de projets collaboratifs non marchands
@@ -103,11 +103,11 @@ pour uploader les paquets , utiliser la commande
     $ meteor npm install
 
 #### 4. Pour lancer le serveur d'assets (optionnel) :
-#####a- lancer un serveur d'assets avec docker
+##### a- lancer un serveur d'assets avec docker
 dans un autre terminal lancez minio avec la commande suivante :
-    $ docker run -p 9000:9000 --name system-d -e "MINIO_ACCESS_KEY=CeQueTuVeux"  -e "MINIO_SECRET_KEY=TonJoliMotDePasse" -v /mnt/data:/data  -v /mnt/config:/root/.minio minio/minio server /data
+    $ docker run -p 9000:9000 --name system-d -e "MINIO_ROOT_USER=CeQueTuVeux"  -e "MINIO_ROOT_PASSWORD=TonJoliMotDePasse" -v /mnt/data:/data  -v /mnt/config:/root/.minio minio/minio server /data
 
-#####b- copier puis renomez le fichier 'settings.template.json' à la racine en 'settings.json' et remplacer les "???" avec vos parametres
+##### b- copier puis renomez le fichier 'settings.template.json' à la racine en 'settings.json' et remplacer les "???" avec vos parametres
      "minio": {
         "endPoint": "172.17.0.2",
         "port": 9000,
@@ -115,8 +115,14 @@ dans un autre terminal lancez minio avec la commande suivante :
         "MINIO_SECRET_KEY":"TonJoliMotDePasse"
       }
 
-    
-#### 4. C'est prêt !
+#### 5. Setup database (not sure)
+* Install mongodb
+* Run mongodb service
+systemctl start mongodb
+* Setup mongodb url in settings.json
+
+
+#### 6. C'est prêt !
 Copiez le fichier settings.template.json à la racine et rennomez le settings.json. Lancez enfin le serveur de dev avec :
    
     $  meteor --settings settings.json

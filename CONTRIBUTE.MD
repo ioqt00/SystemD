@@ -5,7 +5,7 @@ How to contributes documentation
 
 Web application : https://www.system-d.org/
 
-Github repository : https://github.com/HUB-HUmanBeing/SystemD
+Github repository : https://github.com/ioqt00/SystemD
 
 Mail contact : rbanquo@protonmail.com
 
@@ -23,4 +23,4 @@ This is a graph that represents used git flow :
 
 3/ Testers
 
-You can contribute by subscribe to the application and test it. Please reports all your problems on the Github repository [issues page](https://github.com/HUB-HUmanBeing/SystemD/issues).
+You can contribute by subscribe to the application and test it. Please reports all your problems on the Github repository [issues page](https://github.com/ioqt00/SystemD/issues).

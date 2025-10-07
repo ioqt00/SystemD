@@ -44,7 +44,7 @@ App.accessRule('geo:*', {type: "intent"});
 //App.accessRule('*', { type: "intent" });
 
 App.accessRule('http://localhost:*');
-App.accessRule('https://raw.githubusercontent.com/HUB-HUmanBeing/SystemD/master/public/news/newsFeed.json', {type: 'navigation'});
+App.accessRule('https://raw.githubusercontent.com/ioqt00/SystemD/master/public/news/newsFeed.json', {type: 'navigation'});
 // App.accessRule('https://*', { type: 'navigation' });
 App.accessRule('*.openstreetmap.org/*', {type: 'navigation'});
 App.accessRule('*.tile.openstreetmap.com/*', {type: 'navigation'});

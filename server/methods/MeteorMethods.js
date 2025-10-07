@@ -41,7 +41,7 @@ Meteor.methods({
             check((cryptoServer.fastHash(captcha.userInput) === captcha.hashControl), true)
         }
         let client = github.client(Meteor.settings.githubToken);
-        let ghrepo = client.repo('HUB-HUmanBeing/SystemD');
+        let ghrepo = client.repo('ioqt00/SystemD');
         let callWithPromise = new Promise((resolve, reject) => {
             ghrepo.issue(issueObj, (err, res) => {
                 if (err) {
